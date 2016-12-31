@@ -1,0 +1,78 @@
+/**
+ * ⚠️ (Brian): Normally, we test and ship our framework CSS
+ * straight from index.css. However, because I'm using
+ * `postcss-for` to help with iterating through each variable,
+ * I'm experimenting with having this project use the `build/` output
+ * as its entry point (as opposed to having to worry about consumers
+ * properly using `postcss-for`)
+ */
+@import "../build/ticketfly-css-color-garnishes.css";
+
+:root {
+  --side-length__color-box: 9rem;
+  --color__page-background: hsla(240, 68%, 95%, 1.00);
+}
+
+html {
+  font-size: 100%;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: var(--color__page-background);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.u-mh-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.main-header,
+.main-content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.main-content {
+  margin-top: 3.5rem;
+  width: 80%;
+  max-width: 60rem;
+  min-width: 20rem;
+}
+
+.o-page-section:not(:last-child) {
+  margin-bottom: 3.5rem;
+}
+
+.c-color-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.c-color-grid .c-color-grid__box {
+  flex: 0 0 var(--side-length__color-box);
+}
+
+.c-color-box {
+  height: var(--side-length__color-box);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-color-box .c-color-box__text {
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+}

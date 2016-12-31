@@ -1,0 +1,87 @@
+/**
+ * Color garnishes for Ticketfly CSS. These map to the
+ * the color values defined in `ticketfly-css-color-garnishes`.
+ * (https://github.com/Ticketfly-UI/ticketfly-css-color-garnishes)
+ *
+ * For each color, the following keywords are used to apply the value
+ * to a specific CSS rule:
+ *   - [none]: `color`
+ *   - bg: `background-color`
+ *
+ * 📋 Future keyword/garnish ideas (depending on how usefull they may be):
+ *   - bd: `border-color`
+ *   - stroke: `stroke` (SVG)
+ *   - fill: `fill` (SVG)
+ */
+
+@import "ticketfly-css-color-variables";
+
+
+/* ---------- Ticketfly Neutral Grays ---------- */
+
+@for $i from 0 to 10 {
+  .g-gray-$i { color: var(--x-color-gray-$(i)); }
+  .g-bg-gray-$i { background-color: var(--x-color-gray-$(i)); }
+}
+
+
+/* ---------- Ticketfly Indigos ---------- */
+
+@for $i from 0 to 10 {
+  .g-indigo-$i { color: var(--x-color-indigo-$(i)); }
+  .g-bg-indigo-$i { background-color: var(--x-color-indigo-$(i)); }
+}
+
+
+/* ---------- Ticketfly Greens ---------- */
+
+@for $i from 0 to 10 {
+  .g-green-$i { color: var(--x-color-green-$(i)); }
+  .g-bg-green-$i { background-color: var(--x-color-green-$(i)); }
+}
+
+
+/* ---------- Ticketfly Reds ---------- */
+
+@for $i from 0 to 10 {
+  .g-red-$i { color: var(--x-color-red-$(i)); }
+  .g-bg-red-$i { background-color: var(--x-color-red-$(i)); }
+}
+
+
+/* ---------- Ticketfly Yellows ---------- */
+
+@for $i from 0 to 10 {
+  .g-yellow-$i { color: var(--x-color-yellow-$(i)); }
+  .g-bg-yellow-$i { background-color: var(--x-color-yellow-$(i)); }
+}
+
+
+/* ---------- Ticketfly Blues ---------- */
+
+@for $i from 0 to 10 {
+  .g-blue-$i { color: var(--x-color-blue-$(i)); }
+  .g-bg-blue-$i { background-color: var(--x-color-blue-$(i)); }
+}
+
+
+/* ---------- Ticketfly Violets ---------- */
+
+@for $i from 0 to 10 {
+  .g-violet-$i { color: var(--x-color-violet-$(i)); }
+  .g-bg-violet-$i { background-color: var(--x-color-violet-$(i)); }
+}
+
+
+/* ---------- Pure Black ---------- */
+
+.g-black { color: var(--x-color-black); }
+.g-bg-black { background-color: var(--x-color-black); }
+
+
+/* ---------- Pure White ---------- */
+
+.g-white{ color: var(--x-color-white); }
+.g-bg-white { background-color: var(--x-color-white); }
+
+
