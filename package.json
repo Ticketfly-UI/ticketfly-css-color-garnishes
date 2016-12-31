@@ -1,6 +1,6 @@
 {
   "name": "ticketfly-css-color-garnishes",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Color variables for Ticketfly CSS",
   "main": "build/ticketfly-css-color-garnishes.css",
   "style": "build/ticketfly-css-color-garnishes.css",
